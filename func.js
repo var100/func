@@ -1,10 +1,11 @@
 
-// 说明:为Array原型对象添加insert方法
-// 使用:arr.insert(index,val);
-// index int 要添加元素的索引位置 支持负数,表示倒数, 注意是前插入, 而不是后插入
-// val mixed 要添加的元素 
-
-// 函数
+/**
+ * 根据索引位置的前面给数组插入一个元素, 支持负数, 注意是前插, 不是后插
+ * @param array    arr   数组
+ * @param index    index 索引位置
+ * @param mixed    val   要插入的值
+ * @return array   返回输入的数组, 以便链式操作
+*/
 function insert(arr,index,val)
 {
    
@@ -13,6 +14,12 @@ function insert(arr,index,val)
 }
 
 // 添加到Array 原型对象
+/**
+ * 根据索引位置的前面给数组插入一个元素, 支持负数, 注意是前插, 不是后插
+ * @param index    index 索引位置
+ * @param mixed    val   要插入的值
+ * @return array   当前数组对象,以便链式操作
+*/
 Array.prototype.insert = function (index,val)
 {
    this.splice(index,0,val);
@@ -43,7 +50,7 @@ lis = ['php','js','ruby']
 lis.unshift('first'); //4
 lis // ['first','php','js','ruby']
 
-/****************************************************************************************/
+/******************************************************************************/
 
 /**
  * 根据索引位置删除数组的一个元素
@@ -97,12 +104,13 @@ var res = del(lis,11);
 console.log(res); // false
 console.log(lis); // ['php','js','py']
 
+// 删除最后一个元素还可以用 arr.pop()
+// 例: 
+var lis = ['php','js','py'];
+var res = lis.pop();
+console.log(res); // py
+console.log(lis); // ['php','js']
 /*********************************************************************************/
-
-
-
-
-
 
 
 
