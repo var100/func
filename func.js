@@ -1,7 +1,7 @@
 
 // 说明:为Array原型对象添加insert方法
 // 使用:arr.insert(index,val);
-// index int 要添加元素的索引位置 支持负数,表示倒数
+// index int 要添加元素的索引位置 支持负数,表示倒数, 注意是前插入, 而不是后插入
 // val mixed 要添加的元素 
 
 // 函数
