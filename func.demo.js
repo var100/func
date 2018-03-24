@@ -31,6 +31,17 @@ var res = lis.splice(-1,1,'last');
 console.log(res);// ["ruby"]
 console.log(lis);// ['js','php','last'];
 
+// 例:清空数组
+// 1)
+var lis = ['js','php','ruby'];
+var res = lis.splice(0,lis.length);
+console.log(res);// ['js','php','ruby']
+console.log(lis);// [];
+
+//2)
+var lis = ['js','php','ruby'];
+lis = [];
+console.log(lis);// [];
 
 // 扩展: 删除最后一个元素,并插入'last'
 var lis = ['js','php','ruby'];
@@ -45,6 +56,7 @@ var res = lis.shift();
 lis.unshift('first');
 console.log(res);// js
 console.log(lis);// ['first','php','ruby'];
+
 
 /***************************************************************/
 
