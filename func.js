@@ -45,6 +45,26 @@ lis // ['first','php','js','ruby']
 
 /****************************************************************************************/
 
+说明:为Array原型对象添加del方法
+使用:arr.del(index);
+index int 要删除元素的索引位置 支持负数,表示倒数
+
+// 函数
+function del(arr,index)
+{
+    
+   // 返回删除的元素 
+   return arr.splice(index,1).pop();
+  
+}
+
+// 添加到Array 原型对象
+Array.prototype.del = function (index)
+{
+   return this.splice(index,1);
+  
+}
+
 
 
 
