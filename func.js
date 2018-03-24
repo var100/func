@@ -2,7 +2,7 @@
 /**
  * 根据索引位置的前面给数组插入一个元素, 支持负数, 注意是前插, 不是后插
  * @param array    arr   数组
- * @param index    index 索引位置
+ * @param int      index 索引位置
  * @param mixed    val   要插入的值
  * @return array   返回输入的数组, 以便链式操作
 */
@@ -16,7 +16,7 @@ function insert(arr,index,val)
 // 添加到Array 原型对象
 /**
  * 根据索引位置的前面给数组插入一个元素, 支持负数, 注意是前插, 不是后插
- * @param index    index 索引位置
+ * @param int      index 索引位置
  * @param mixed    val   要插入的值
  * @return array   当前数组对象,以便链式操作
 */
@@ -55,7 +55,7 @@ lis // ['first','php','js','ruby']
 /**
  * 根据索引位置删除数组的一个元素
  * @param array    arr 数组
- * @param index    索引位置
+ * @param int      index    索引位置
  * @return mixed   删除成功返回删除的值,失败返回false
 */
 function del(arr,index)
@@ -69,7 +69,7 @@ function del(arr,index)
 // 添加到数组原型对象上
 /**
  * 根据索引位置删除数组的一个元素
- * @param index    索引位置
+ * @param  int  index    索引位置
  * @return mixed   删除成功返回删除的值,失败返回false
 */
 Array.prototype.del = function (index)
