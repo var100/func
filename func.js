@@ -268,13 +268,13 @@ testFunctionRunTime(function(){
 // console.time() , console.timeEnd()方法计算图片加载时间
 var img = new Image;
 document.querySelector('body').appendChild(img);
-console.time("")
+console.time("图片加载时间")
 img.src = "http://www.mm4493.com/d/file/p/2016-01-04/50ef2506f4d3d9beabbc50a18805acb5.jpg";
 img.onload = function ()
 {
    console.timeEnd("图片加载时间")
 }
 //  图片加载时间: 1521967136005.865ms
-
+// 统计开始跟结束写上 console.time(label) 和 console.timeEnd(label), 注意label 要一致.
 
 
