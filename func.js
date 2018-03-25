@@ -241,6 +241,28 @@ var index = lis.removeAll("java");
 console.log(index);  // 0
 console.log(lis);    // ["php","python","js","php"]
 
+/***********************************************************************/
+/**
+ * 测试函数运行时间    单位:毫秒
+ * @param function    测试的函数
+ * @return void       直接打印结果
+*/
+function testFunctionRunTime(fn) {
+　　var start = new Date().getTime();
+　　if (fn) fn();
+　　var end = new Date().getTime();
+　　console.log("%c "+(end-start)+"ms","color:red;font-size:14px");
+}
+
+// 例: 
+testFunctionRunTime(function(){
+   for(j=0,i=0;i<99999;i++)
+   {
+      j++
+   }
+})
+
+// 结果打印 3ms
 
 
 
