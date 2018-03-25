@@ -74,6 +74,7 @@ img.onload = function ()
    console.timeEnd("图片加载时间")
 }
 //  图片加载时间: 1521967136005.865ms
+// 统计开始跟结束写上 console.time(label) 和 console.timeEnd(label), 注意label 要一致.
 
 /***************************************************************/
 
