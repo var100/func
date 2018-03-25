@@ -112,5 +112,63 @@ console.log(res); // py
 console.log(lis); // ['php','js']
 /*********************************************************************************/
 
+/**
+ * 根据值删除数组一个元素
+ * @param array    arr   数组
+ * @param mixed    val   查找的值
+ * @param mixed    dir   查找方向,大于0为从左向右, 小于0为从右向左
+ * @return mixed   删除成功, 返回索引,失败(找不到)返回false
+*/
 
+function remove(arr,val,dir)
+{
+  var dir = dir ? dir : 1;// 默认为正向
+  var index = arr.indexOf(val);
+  if(index == -1) return false;
+  if(dir < 0) index = arr.lastIndexOf(val);
+  arr.splice(index,1);
+  return index;
+}
+
+Array.prototype.remove = function(val,dir)
+{
+   var dir = dir ? dir : 1;// 默认为正向
+   var index = this.indexOf(val);
+   if(index == -1) return false;
+   if(dir < 0) index = this.lastIndexOf(val);
+   this.splice(index,1);
+   return index;
+}
+
+// 例:删除第一个元素"php"
+var lis = ["php","python","js","php"];
+var index = lis.remove("php");
+console.log(index);  // 0
+console.log(lis);    // ["python","js","php"]
+
+// 例:删除最后一个元素"php"
+var lis = ["php","python","js","php"];
+var index = lis.remove("php",-1);
+console.log(index);  // 3
+console.log(lis);    // ["php",python","js"]
+
+// 删除第二个元素 "python"
+var lis = ["php","python","js","php"];
+var index = lis.remove("python");
+console.log(index);  // 1
+console.log(lis);    // ["php",js","php"]
+
+// 引用类型,传值删除不了
+var lis = ["php",["a"],"js","php"];
+var index = lis.remove(["a"]);
+console.log(index);  // false
+console.log(lis);    // ["php", Array(1), "js", "php"]
+
+// 引用类型,传引用,可以删除
+var lis = ["php",["a"],"js","php"];
+var index = lis.remove(lis[1]);
+console.log(index);  // 1
+console.log(lis);    // ["php", "js", "php"]
+
+/***********************************************************************/
 
