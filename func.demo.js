@@ -5,7 +5,7 @@
  * @param mixed    val      要插入的值
  * @return array   删除的元素
 */
-Array.prototype._splice = function (index,len,val){};
+Array.prototype.splice = function (index,len,val){};
 
 // 例:删除第一个元素,并插入'py'
 var lis = ['js','php','ruby'];
@@ -57,6 +57,23 @@ lis.unshift('first');
 console.log(res);// js
 console.log(lis);// ['first','php','ruby'];
 
+
+/***************************************************************/
+/**
+ * 计算程序运行时间
+ * @param string        打印标题
+ * @return void  
+*/
+// console.time() , console.timeEnd()方法计算图片加载时间
+var img = new Image;
+document.querySelector('body').appendChild(img);
+console.time("")
+img.src = "http://www.mm4493.com/d/file/p/2016-01-04/50ef2506f4d3d9beabbc50a18805acb5.jpg";
+img.onload = function ()
+{
+   console.timeEnd("图片加载时间")
+}
+//  图片加载时间: 1521967136005.865ms
 
 /***************************************************************/
 
