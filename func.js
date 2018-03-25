@@ -171,4 +171,76 @@ console.log(index);  // 1
 console.log(lis);    // ["php", "js", "php"]
 
 /***********************************************************************/
+/**
+ * 删除数组中所有出现的该元素
+ * @param array    arr   数组
+ * @param mixed    val   查找的值
+ * @return number int    删除的元素个数,如果没有就是0
+*/
+
+function removeAll(arr,val)
+{
+   var index;
+   var count = 0;
+   while((index=arr.indexOf(val)) != -1)
+   {
+      arr.splice(index,1);
+      count++;
+   }
+   return count;
+
+}
+
+Array.prototype.removeAll = function(val)
+{
+   var index;
+   var count = 0;
+   while((index=this.indexOf(val)) != -1)
+   {
+      this.splice(index,1);
+      count++;
+   }
+   return count;
+}
+
+// 优化后, 提高运行速度
+function removeAll(arr,val)
+{
+   var index;
+   var count = 0;
+   for(var index=arr.length;index--;)
+   {
+      if(arr[index]==val) arr.splice(index,1) && ++count;
+      
+   }
+   return count;
+
+}
+
+Array.prototype.removeAll = function(val)
+{
+   var index;
+   var count = 0;
+   for(var index=this.length;index--;)
+   {
+      if(this[index]==val) this.splice(index,1) && ++count;
+      
+   }
+   return count;
+}
+
+// 例:删除所有元素"php"
+var lis = ["php","python","js","php"];
+var index = lis.removeAll("php");
+console.log(index);  // 2
+console.log(lis);    // ["python","js"]
+
+// 例:删除一个不存的元素
+var lis = ["php","python","js","php"];
+var index = lis.removeAll("java");
+console.log(index);  // 0
+console.log(lis);    // ["php","python","js","php"]
+
+
+
 
