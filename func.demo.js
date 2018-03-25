@@ -67,7 +67,7 @@ console.log(lis);// ['first','php','ruby'];
 // console.time() , console.timeEnd()方法计算图片加载时间
 var img = new Image;
 document.querySelector('body').appendChild(img);
-console.time("")
+console.time("图片加载时间")
 img.src = "http://www.mm4493.com/d/file/p/2016-01-04/50ef2506f4d3d9beabbc50a18805acb5.jpg";
 img.onload = function ()
 {
