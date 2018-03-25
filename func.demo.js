@@ -78,6 +78,27 @@ img.onload = function ()
 
 /***************************************************************/
 
+/**
+ * 计算运行次数
+ * @param mixed (int, string,array 都可以)   label   
+ * @return void   
+*/
+console.count = function (label){}
 
+// 例: 
+var num = 3;
+while(num--)
+{
+   console.count('inner');
+}
+console.count('out');
 
+/* 结果 
+inner: 1
+inner: 2
+inner: 3
+out: 1
+*/
+
+/***************************************************/
 
