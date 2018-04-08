@@ -26,4 +26,9 @@ echo date('Y-m-d H:i:s',strtotime('last day',strtotime('2018-04-08 00:00:00')));
 // 昨天 2018-04-07 00:00:00
 echo date('Y-m-d H:i:s',strtotime('-1 day',strtotime('2018-04-08 00:00:00')));
 
+// now, +/-num day, +/-num week, +/-num month, +/- num wook num days num hours num second,
+// first day of next nonth,
+// first day of last month,
+// last day of next month,
+// last day of last month,
 
