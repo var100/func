@@ -37,7 +37,6 @@ echo date('Y-m-d',strtotime(date('Y-m-01',strtotime('2008-03-31')).'-1 day'));//
 // 获取上个月最后一天
 echo date('Y-m-d',strtotime('-1 day',strtotime(date('Y-m-01',strtotime('2008-03-31')))));//2008-02-29
 
-
 // 获取下个月第一天
 echo date('Y-m-d',strtotime('first day of next month 2008-01-31'));//2008-02-01
 // 获取下个月最后一天
