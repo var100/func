@@ -183,5 +183,32 @@ echo microtime(true);//1523199364.3194
 echo array_sum(explode(' ',microtime()));//1523199364.3194
 
 /////////////////////////////////////////////////////////////////////////////////////
+/*
+ getdate($timestamp=time())
+ 说明:获得日期 时间信息
+ */
+
+// 例:
+$date_arr = getdate(strtotime('2018-04-08'));
+print_r($date_arr);
+/*
+Array
+(
+    [seconds] => 0
+    [minutes] => 0
+    [hours] => 0
+    [mday] => 8
+    [wday] => 0
+    [mon] => 4
+    [year] => 2018
+    [yday] => 97
+    [weekday] => Sunday
+    [month] => April
+    [0] => 1523116800
+)
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////
+
 
 
