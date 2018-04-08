@@ -40,13 +40,13 @@ function get_date($timestamp=0)
 
 // 例:
 // 2008-12-01 00:00:00
-echo get_date(strtotime('2009-01-31'))['first_day_of_last_month'];echo '<br>';
+echo get_date(strtotime('2009-01-31'))['first_day_of_last_month'];
 // 2009-01-31 23:59:59
-echo get_date(strtotime('2009-02-28'))['last_day_of_last_month'];echo '<br>';
+echo get_date(strtotime('2009-02-28'))['last_day_of_last_month'];
 // 2009-02-01 00:00:00
-echo get_date(strtotime('2009-01-31'))['first_day_of_next_month'];echo '<br>';
+echo get_date(strtotime('2009-01-31'))['first_day_of_next_month'];
 // 2009-02-28 23:59:59
-echo get_date(strtotime('2009-01-31'))['last_day_of_next_month'];echo '<br>';
+echo get_date(strtotime('2009-01-31'))['last_day_of_next_month'];
 
 
 
