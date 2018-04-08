@@ -76,7 +76,7 @@ echo date('Y-m-d H:i:s',strtotime('+1 day,+1 hours 2018-04-08'));//2018-04-09 01
 // last day of next month,
 // last day of last month,
 
-// 下面几个常用到
+// 下面几个常用到 求上个月,下个月的思路 求上个月(本月第一天减去1天) 求下个月(本月最后一天加1天)
 //获取这个月第一天
 $timestamp = strtotime('2018-04-08');
 echo date('Y-m-01',$timestamp);//2018-04-01
