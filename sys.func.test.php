@@ -64,6 +64,8 @@ echo date('Y-m-01',strtotime('2018-04-08'));//2018-04-01
 echo date('Y-m-t',strtotime('2018-04-08'));//2018-04-30
 // 加一个月,一天
 echo date('Y-m-d H:i:s',strtotime('+1 month 1 day',strtotime('2018-04-08')));//2018-05-09 00:00:00
+// 加一天, 一小时
+echo date('Y-m-d H:i:s',strtotime('+1 day,+1 hours 2018-04-08'));//2018-04-09 01:00:00
 
 // now, +/-num day, +/-num week, +/-num month, +/- num wook num days num hours num second,
 // first day of next nonth,
