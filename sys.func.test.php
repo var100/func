@@ -209,6 +209,28 @@ Array
 */
 
 /////////////////////////////////////////////////////////////////////////////////////
+/*
+gettimeofday(return_float)
+说明:取得当前时间 默认返回数组
+$return_float 为真返回等价于 microtime(true)的值 含4位小数点的 包含微妙的以秒为单位的值
+*/
 
+// 例:
+$arr = gettimeofday($return_float=false);
+print_r($arr);
+/*
+Array
+(
+    [sec] => 1523200070
+    [usec] => 371225
+    [minuteswest] => -480
+    [dsttime] => 0
+)
+*/
 
+echo gettimeofday(true);//1523200070.3713
+echo microtime(true);//1523200070.3713
+//说明: gettimeofday(true)等价于 microtime(true)
+
+/////////////////////////////////////////////////////////////////////////////////////
 
