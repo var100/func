@@ -58,6 +58,13 @@ echo date('Y-m-d H:i:s',strtotime('first day of next month 2018-04-08 01:00:00')
 // 下个月最后一天
 echo date('Y-m-d H:i:s',strtotime('last day of next month 2018-04-08 01:00:00'));//2018-05-31 01:00:00
 
+//获取这个月第一天
+echo date('Y-m-01',strtotime('2018-04-08'));//2018-04-01
+// 获取最后一天
+echo date('Y-m-t',strtotime('2018-04-08'));//2018-04-30
+// 加一个月,一天
+echo date('Y-m-d H:i:s',strtotime('+1 month 1 day',strtotime('2018-04-08')));//2018-05-09 00:00:00
+
 // now, +/-num day, +/-num week, +/-num month, +/- num wook num days num hours num second,
 // first day of next nonth,
 // first day of last month,
