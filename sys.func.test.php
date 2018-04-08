@@ -26,6 +26,25 @@ echo date('Y-m-d H:i:s',strtotime('last day',strtotime('2018-04-08 00:00:00')));
 // 昨天 2018-04-07 00:00:00
 echo date('Y-m-d H:i:s',strtotime('-1 day',strtotime('2018-04-08 00:00:00')));
 
+// 获取上个月第一天
+echo date('Y-m-01',strtotime(date('Y-m-01',strtotime('2008-03-31')).'-1 day'));//2008-02-01
+// 获取上个月第一天
+echo date('Y-m-d',strtotime('-1 month',strtotime(date('Y-m-01',strtotime('2008-03-31')))));//2008-02-01
+// 获取上个月第一天
+echo date('Y-m-d',strtotime(date('Y-m-01',strtotime('first day of last month 2008-03-31'))));//2008-02-01
+// 获取上个月最后一天
+echo date('Y-m-d',strtotime(date('Y-m-01',strtotime('2008-03-31')).'-1 day'));//2008-02-29
+// 获取上个月最后一天
+echo date('Y-m-d',strtotime('-1 day',strtotime(date('Y-m-01',strtotime('2008-03-31')))));//2008-02-29
+
+
+// 获取下个月第一天
+echo date('Y-m-d',strtotime('first day of next month 2008-01-31'));//2008-02-01
+// 获取下个月最后一天
+echo date('Y-m-d',strtotime('last day of next month 2008-01-31'));//2008-02-29
+// 获取这个月有多少天
+echo date('t',strtotime('2018-04-08'));//30
+
 // now, +/-num day, +/-num week, +/-num month, +/- num wook num days num hours num second,
 // first day of next nonth,
 // first day of last month,
