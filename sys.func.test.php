@@ -76,3 +76,19 @@ echo date('Y-m-d H:i:s',strtotime('+1 day,+1 hours 2018-04-08'));//2018-04-09 01
 // last day of next month,
 // last day of last month,
 
+// 下面几个常用到
+//获取这个月第一天
+$timestamp = strtotime('2018-04-08');
+echo date('Y-m-01',$timestamp);//2018-04-01
+//获取这个月最后一天
+echo date('Y-m-t',$timestamp);//2018-04-30
+//获取上个月第一天
+echo date('Y-m-01',strtotime(date('Y-m-01',$timestamp).'-1 day'));//2018-03-01
+//获取上个月最后一天
+echo date('Y-m-d',strtotime(date('Y-m-01',$timestamp).'-1 day'));//2018-03-31
+//获取下个月第一天
+echo date('Y-m-01',strtotime(date('Y-m-t',$timestamp).'+1 day'));//2018-05-01
+//获取下个月最后一天
+echo date('Y-m-t',strtotime(date('Y-m-t',$timestamp).'+1 day'));//2018-05-31
+
+
