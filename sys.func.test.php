@@ -17,5 +17,13 @@ echo date('Y-m-d H:i:s',strtotime('next month 2009-01-31'));
 //2009-03-01 00:00:00
 echo date('Y-m-d H:i:s',strtotime('2009-01-29 +1 month'));
 
+// 明天 2018-04-09 00:00:00
+echo date('Y-m-d H:i:s',strtotime('next day',strtotime('2018-04-08 00:00:00')));
+// 明天 2018-04-09 00:00:00
+echo date('Y-m-d H:i:s',strtotime('+1 day',strtotime('2018-04-08 00:00:00')));
+// 昨天 2018-04-07 00:00:00
+echo date('Y-m-d H:i:s',strtotime('last day',strtotime('2018-04-08 00:00:00')));
+// 昨天 2018-04-07 00:00:00
+echo date('Y-m-d H:i:s',strtotime('-1 day',strtotime('2018-04-08 00:00:00')));
 
 
