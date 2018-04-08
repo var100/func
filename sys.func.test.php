@@ -44,6 +44,20 @@ echo date('Y-m-d',strtotime('last day of next month 2008-01-31'));//2008-02-29
 // 获取这个月有多少天
 echo date('t',strtotime('2018-04-08'));//30
 
+// 加一天
+echo date('Y-m-d H:i:s',strtotime('+1 day 2018-04-08 01:00:00'));//2018-04-09 01:00:00
+// 减一天
+echo date('Y-m-d H:i:s',strtotime('-1 day 2018-04-08 01:00:00'));//2018-04-07 01:00:00
+// 加一周
+echo date('Y-m-d H:i:s',strtotime('+1 week 2018-04-08 01:00:00'));//2018-04-15 01:00:00
+// 减一周
+echo date('Y-m-d H:i:s',strtotime('-1 week 2018-04-08 01:00:00'));//2018-04-01 01:00:00
+echo date('Y-m-d H:i:s',strtotime('+1 week 2 days 4 hours 2 seconds 2018-04-08 01:00:00'));//2018-04-17 05:00:02
+// 下个月第一天
+echo date('Y-m-d H:i:s',strtotime('first day of next month 2018-04-08 01:00:00'));//2018-05-01 01:00:00
+// 下个月最后一天
+echo date('Y-m-d H:i:s',strtotime('last day of next month 2018-04-08 01:00:00'));//2018-05-31 01:00:00
+
 // now, +/-num day, +/-num week, +/-num month, +/- num wook num days num hours num second,
 // first day of next nonth,
 // first day of last month,
