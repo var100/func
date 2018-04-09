@@ -5,3 +5,4 @@
 - phpExcel 使用内存占用过大 https://blog.csdn.net/xiaoxiaohui520134/article/details/52796111
 - phpxlsxWrite 表格导出 http://www.thinkphp.cn/topic/51823.html
 - mindmanager 思维导图 www.rsdown.cn/s/mindmanager/
+- Phantomjs 使用说明 无头浏览器 https://www.jianshu.com/p/15cba843bb55
