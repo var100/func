@@ -8,6 +8,7 @@
 - Phantomjs 使用说明 无头浏览器 github 地址https://github.com/ariya/phantomjs/tree/master/test
 - Phantomjs 使用说明 无头浏览器 https://www.jianshu.com/p/15cba843bb55 
 - Phantomjs 使用说明 无头浏览器 https://blog.csdn.net/freeking101/article/details/69390136
-
+- Phantomjs 使用说明 无头浏览器官网 http://phantomjs.org/api/command-line.html
+- json查看 http://qqe2.com/
 
 
