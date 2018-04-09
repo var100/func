@@ -11,4 +11,6 @@
 - Phantomjs 使用说明 无头浏览器官网 http://phantomjs.org/api/command-line.html
 - CasperJs 是一个基于 PhantomJs 的工具，其比起 PhantomJs 可以更加方便的进行 navigation。https://www.jianshu.com/p/46b9d255cecb
 - json查看 http://qqe2.com/
-
+- Headless Chrome入门 简书 https://www.jianshu.com/p/aec4b1216011
+- Headless Chrome 使用demo https://blog.csdn.net/A41202197514/article/details/74363991
+- Headless Chrome 官网 https://www.chromium.org/getting-involved/dev-channel
