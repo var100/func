@@ -14,3 +14,6 @@
 - Headless Chrome入门 简书 https://www.jianshu.com/p/aec4b1216011
 - Headless Chrome 使用demo https://blog.csdn.net/A41202197514/article/details/74363991
 - Headless Chrome 官网 https://www.chromium.org/getting-involved/dev-channel
+- Headless Chrome demo https://segmentfault.com/a/1190000009071883
+- Headless Chrome demo https://github.com/yesvods/Blog/issues/10
+- Headless Chrome demo https://div.io/topic/1978
