@@ -17,3 +17,4 @@
 - Headless Chrome demo https://segmentfault.com/a/1190000009071883
 - Headless Chrome demo https://github.com/yesvods/Blog/issues/10
 - Headless Chrome demo https://div.io/topic/1978
+- centos 镜像下载 https://www.centos.org/download/
