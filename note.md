@@ -18,3 +18,4 @@
 - Headless Chrome demo https://github.com/yesvods/Blog/issues/10
 - Headless Chrome demo https://div.io/topic/1978
 - centos 镜像下载 https://www.centos.org/download/
+- centos 教程 https://www.centoschina.cn/
