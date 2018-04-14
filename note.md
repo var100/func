@@ -20,3 +20,4 @@
 - centos 镜像下载 https://www.centos.org/download/
 - centos 教程 https://www.centoschina.cn/
 - 网络摄像头-基于HTML5+Canvas+Websocket+Workerman https://github.com/walkor/live-camera
+- swoole 教程 https://wiki.swoole.com/wiki
