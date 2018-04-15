@@ -24,3 +24,4 @@
 - swoole git上教程 https://github.com/smalleyes/swoole-chm
 - swoole git上教程 https://github.com/LinkedDestiny/swoole-doc
 - swoole+websocket+html5实现的简易版直播功能 https://blog.csdn.net/tiaozhanji_xian/article/details/70861156
+- 百度cdn加速 http://cdn.code.baidu.com/
