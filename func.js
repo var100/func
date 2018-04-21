@@ -277,4 +277,85 @@ img.onload = function ()
 //  图片加载时间: 1521967136005.865ms
 // 统计开始跟结束写上 console.time(label) 和 console.timeEnd(label), 注意label 要一致.
 
+/******************************************************************************/
+// cookie相关
+/**
+ * 获取cookie
+ * @param string  key 
+ * @return mixed  key对应的值
+*/
+function getCookie(key)
+{
+	var cookie = document.cookie,
+	cookieList = cookie.split('; '),
+	index;
+	for(var i=0;i<cookieList.length;i++)
+	{
+		index = cookieList[i].indexOf('=');
+		if(cookieList[i].substr(0,index) === key)
+			return decodeURIComponent(cookieList[i].substr(index+1));
+		
+	}
+	return null;
+}
+
+/**
+ * 设置cookie
+ * @param string  key 
+ * @param mixed   value   
+ * @param int     timeSecond   有效期 单位:秒
+ * @return void
+*/
+function setCookie(key,value,timeSecond)
+{
+	var timeSecond = timeSecond ? timeSecond : 3600*24*365;
+	document.cookie = key+'='+encodeURIComponent(value)+'; max-age='+timeSecond+'; path=/';
+}
+
+/**
+ * 根据key移除cookie中的值
+ * @param string  key 
+ * @return void  
+*/
+function removeCookie(key)
+{
+	document.cookie = key+'=; max-age=-1; path=/';
+}
+
+/**
+ * 清空所有cookie
+ * @return void
+*/
+function clearCookie()
+{
+	var cookie = document.cookie,
+	cookieList = cookie.split('; '),
+	index;
+	for(var i =0;i<cookieList.length;i++)
+	{
+		index = cookieList[i].indexOf('=');
+		document.cookie = cookieList[i].substr(0,index) + '=; max-age=-1; path=/';
+	}
+
+}
+
+/**
+ * 获取所有cookie
+ * @return mixed(array/null)  所有cookie
+*/
+function getAllCookie()
+{
+	var cookie = decodeURIComponent(document.cookie),
+	cookieList = [],
+	index;
+	cookie = cookie ? cookie.split('; ') : null;
+	if(!cookie) 
+		return cookie;
+	for(var i = 0; i < cookie.length; i++)
+	{
+		index = cookie[i].indexOf('=');
+		cookieList[cookie[i].substr(0,index)] = cookie[i].substr(index+1);
+	}
+	return cookieList;
+}
 
