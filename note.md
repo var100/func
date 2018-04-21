@@ -25,3 +25,7 @@
 - swoole git上教程 https://github.com/LinkedDestiny/swoole-doc
 - swoole+websocket+html5实现的简易版直播功能 https://blog.csdn.net/tiaozhanji_xian/article/details/70861156
 - 百度cdn加速 http://cdn.code.baidu.com/
+- go语言官网(需要翻墙) https://golang.org/ 
+- go语言国内下载地址 https://www.golangtc.com/download    https://studygolang.com/dl
+- go语言中文在线文档: https://studygolang.com/pkgdoc
+- go语言开发IDE lite IDE  下载地址: https://www.golangtc.com/go/liteide
