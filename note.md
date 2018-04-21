@@ -29,3 +29,4 @@
 - go语言国内下载地址 https://www.golangtc.com/download    https://studygolang.com/dl
 - go语言中文在线文档: https://studygolang.com/pkgdoc
 - go语言开发IDE lite IDE  下载地址: https://www.golangtc.com/go/liteide
+- go群里的开源go+node https://www.golang123.com/book
