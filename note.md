@@ -30,3 +30,4 @@
 - go语言中文在线文档: https://studygolang.com/pkgdoc
 - go语言开发IDE lite IDE  下载地址: https://www.golangtc.com/go/liteide
 - go群里的开源go+node https://www.golang123.com/book
+- 整数序列 算法 http://oeis.org
