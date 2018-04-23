@@ -1,3 +1,4 @@
+<?php
 // ... 语法
 // php5.6
 function test(...$lis){
