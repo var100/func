@@ -382,4 +382,60 @@ function signinIntegral(day)
 	return Math.floor(Math.sqrt(2*day)+ 1/2)
 }
 
+/**
+ * 获取指定日期的上一天
+ * @parem string date 日期格式为 "20180423"
+ * @return string 上一天 格式为 "20180422"
+*/
+function getLastDay(date)   
+    {   
+        // var   today=new   Date()
+        var today = new Date(date.substr(0,4) + "-" + date.substr(4,2) + "-" + date.substr(6))
+        var   yesterday_milliseconds = today.getTime() - 1000*60*60*24
+
+        var   yesterday = new   Date()   
+        yesterday.setTime(yesterday_milliseconds)
+        var strYear = yesterday.getFullYear()
+        var strDay = yesterday.getDate()
+        var strMonth = yesterday.getMonth() + 1
+
+        if(strMonth < 10)      
+            strMonth = "0" + strMonth
+        if(strDay < 10)
+        	strDay = "0" + strDay
+        return strYear + strMonth + strDay
+
+    }
+
+// 模拟数据
+var lis = [
+	"20180422",
+	"20180421",
+	"20180420",
+	"20180418",
+]
+
+/**
+ * [day 获取今天是连续签到第几天]
+ * @param  {[array]} data        [某用户签到列表,按时间desc提前排好序]
+ * @param  {[string]} currentDate [当前时间 例:"20180423"]
+ * @return {[int]}             [连续签到天数]
+ * 补充:数据库设计 id,user_id,add_time
+ */
+function day(data,currentDate)
+{
+	var num = 0, lastDate;
+	for(var i=0;i<data.length;i++)
+	{
+		lastDate = data[i]
+		if(lastDate != getLastDay(currentDate))
+			return num
+		num++
+		currentDate = lastDate
+		
+	}
+	return num
+}
+
+
 /******************************************************************************/
