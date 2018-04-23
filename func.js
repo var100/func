@@ -437,5 +437,34 @@ function day(data,currentDate)
 	return num
 }
 
+// 扩展 在获取上一天函数基础上更改而来获取下一天
+/**
+ * 获取指定日期的下一天
+ * @parem string date 日期格式为 "20180423"
+ * @return string 下一天 格式为 "20180424"
+*/
+function getNextDay(date)   
+    {   
+        // var   today=new   Date()
+        var today = new Date(date.substr(0,4) + "-" + date.substr(4,2) + "-" + date.substr(6))
+        var   yesterday_milliseconds = today.getTime() + 1000*60*60*24
+
+        var   yesterday = new   Date()   
+        yesterday.setTime(yesterday_milliseconds)
+        var strYear = yesterday.getFullYear()
+        var strDay = yesterday.getDate()
+        var strMonth = yesterday.getMonth() + 1
+
+        if(strMonth < 10)      
+            strMonth = "0" + strMonth
+        if(strDay < 10)
+        	strDay = "0" + strDay
+        return strYear + strMonth + strDay
+
+    }
+
 
 /******************************************************************************/
+
+
+
