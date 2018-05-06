@@ -35,3 +35,5 @@
 - composer 镜像地址: https://packagist.org/ 包官方网站
 - composer镜像地址: http://pkg.phpcomposer.com/ 中国镜像网
 - composer镜像地址: https://github.com/  全球最大的开源网站
+- composer 文档: http://docs.phpcomposer.com 
+- composer 文档自动加载: http://docs.phpcomposer.com/01-basic-usage.html
