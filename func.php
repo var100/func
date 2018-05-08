@@ -80,6 +80,40 @@ $res = bubble_sorting($arr);
 echo '<pre>';
 print_r($res);
 
+//////////////////////////////////////////////////////////////////////////
+/**
+ * 冒泡排序-优化版(针对于已经排好序的数组) 原理:比较一轮没有发生交换数据,说明已经是排好序的,就无须再比较了
+ * @param $arr array  需要排序的数组
+ * @return array 排序后的数组
+*/
+function bubble_sorting($arr)
+{
+   $len = count($arr);
+   $temp;
+   for ($i=0; $i <$len-1 ; $i++) 
+   { 
+   		$flag = 0;
+	   	for ($j=0; $j <$len-$i-1 ; $j++) 
+	   	{ 
+	   		if($arr[$j]>$arr[$j+1])
+	   		{
+	   			$temp = $arr[$j];
+	   			$arr[$j] = $arr[$j+1];
+	   			$arr[$j+1] = $temp;
+	   			$flag = 1;
+	   		}
+	   	}
+	   	if($flag === 0) break;
+
+   }
+   return $arr;
+}
+
+echo date('H:i:s').'<br>';
+$arr = range(0,10000);
+$arr = bubble_sorting($arr);
+echo date('H:i:s');
+
 /*************************************************************************/
 /**
  * 生成随机元素num值的数组
