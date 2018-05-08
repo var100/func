@@ -38,3 +38,4 @@
 - composer 文档: http://docs.phpcomposer.com 
 - composer 文档自动加载: http://docs.phpcomposer.com/01-basic-usage.html
 - php生成二维码 https://github.com/endroid/qr-code
+- 码云 https://gitee.com/
