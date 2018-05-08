@@ -114,6 +114,54 @@ $arr = range(0,10000);
 $arr = bubble_sorting($arr);
 echo date('H:i:s');
 
+///////////////////////////////////////////////////////////////////////////
+
+/**
+ * 冒泡排序-优化版(针对逆序排好的数组, 或趋势于逆序排列的数组缩短时间)
+ * 如果发现是有逆序趋势, 会反转, 进行排序, 如果反转过来发现是排好的, 就不会再比较了 
+ * @param $arr array  需要排序的数组
+ * @return array 排序后的数组
+*/
+function bubble_sorting($arr)
+{
+	$tmp_arr = $arr;
+	$len = count($arr);
+	$temp;
+	for($i=0;$i<$len-1;$i++)
+	{
+		$flag = 0;
+		for($j=0;$j<$len-$i-1;$j++)
+		{
+			if($arr[$j]>$arr[$j+1])
+			{
+				$temp = $arr[$j];
+				$arr[$j] = $arr[$j+1];
+				$arr[$j+1] = $temp;
+				++$flag;
+			}
+		}
+		if($flag === 0) break;
+		if($flag === $len-1)
+		{
+
+			$arr = array_reverse($tmp_arr);
+		}
+	}
+
+	return $arr;
+}
+
+
+echo '<pre>';
+$arr =array_reverse(range(1,20));
+print_r(bubble_sorting($arr));
+
+echo date('H:i:s').'<br>';
+$arr = array_reverse(range(1,6000));
+$arr[10] = 3;
+$res = bubble_sorting($arr);
+echo date('H:i:s').'<br>';
+
 /*************************************************************************/
 /**
  * 生成随机元素num值的数组
