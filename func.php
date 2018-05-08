@@ -48,5 +48,63 @@ echo get_date(strtotime('2009-01-31'))['first_day_of_next_month'];
 // 2009-02-28 23:59:59
 echo get_date(strtotime('2009-01-31'))['last_day_of_next_month'];
 
+/*************************************************************************/
+/**
+ * 冒泡排序
+ * @param $arr array  需要排序的数组
+ * @return array 排序后的数组
+*/
+
+function bubble_sorting($arr)
+{
+   $len = count($arr);
+   $temp;
+   for ($i=0; $i <$len ; $i++) 
+   { 
+	   	for ($j=0; $j <$len-$i-1 ; $j++) 
+	   	{ 
+	   		if($arr[$j]>$arr[$j+1])
+	   		{
+	   			$temp = $arr[$j];
+	   			$arr[$j] = $arr[$j+1];
+	   			$arr[$j+1] = $temp;
+	   		}
+	   	}
+   }
+   return $arr;
+}
+
+// 使用例:
+$arr=rand_arr(-10,30,20);//产生一个20个长度的数组,数组值范围是-10到30
+$res = bubble_sorting($arr);
+echo '<pre>';
+print_r($res);
+
+/*************************************************************************/
+/**
+ * 生成随机元素num值的数组
+ * @param $minval int  随机元素最小值
+ * @param $maxval int 随机元素最大值
+ * @param $num int 数组长度
+ * @return 产生的数组
+*/
+function rand_arr($minval,$maxval,$num)
+{
+	$arr = [];
+	for($i=0;$i<$num;$i++)
+	{
+		$arr[] = mt_rand($minval,$maxval);
+	}
+	return $arr;
+}
+
+//调用:产生一个5个长度的数组,取值范围从-3到6
+$arr = rand_arr(-3,6,5);
+print_r($arr);
+
+/*************************************************************************/
+
+
+
 
 
