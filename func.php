@@ -194,6 +194,42 @@ $res = select_sorting($arr);
 echo '<pre>';
 print_r($res);
 
+//////////////////////////////////////////////////////////////////////////
+
+/**
+ * 选择排序算法-优化版
+ * 优化计算,优化交换
+ * @param $arr array  需要排序的数组
+ * @return array 排序后的数组
+*/
+function select_sorting($arr)
+{
+	$len = count($arr);
+	$num = $len-1;
+	for($i=0;$i<$num;$i++)
+	{
+		$min_index = $i;
+		for($j=$i+1;$j<$len;$j++)
+		{
+			if($arr[$min_index]>$arr[$j]) 
+				$min_index = $j;
+		}
+
+		if($min_index !== $i)
+		{
+			$temp = $arr[$min_index];
+			$arr[$min_index] = $arr[$i];
+			$arr[$i] = $temp;
+		}
+		
+	}
+	return $arr;
+}
+
+$data = rand_arr(-60,1000000,200);
+echo '<pre>';
+print_r(select_sorting($data));
+
 /*************************************************************************/
 /**
  * 生成随机元素num值的数组
