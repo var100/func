@@ -164,6 +164,38 @@ echo date('H:i:s').'<br>';
 
 /*************************************************************************/
 /**
+ * 选择排序算法
+ * 思路:假设i索引为最小值,然后与后面i+1,i+2,...比较, 找到最小值, 与i交换
+ * @param $arr array  需要排序的数组
+ * @return array 排序后的数组
+*/
+function select_sorting($arr)
+{
+	$len = count($arr);
+	for($i=0;$i<$len-1;$i++)
+	{
+		$min_index = $i;
+		for($j=$i;$j<$len-1;$j++)
+		{
+			if($arr[$min_index]>$arr[$j+1])
+			{
+				$min_index = $j+1;
+			}
+		}
+		$temp = $arr[$min_index];
+		$arr[$min_index] = $arr[$i];
+		$arr[$i] = $temp;
+	}
+	return $arr;
+}
+
+$arr = [3,2,1,-6,-8,-4,6,1,8,5,-1,5];
+$res = select_sorting($arr);
+echo '<pre>';
+print_r($res);
+
+/*************************************************************************/
+/**
  * 生成随机元素num值的数组
  * @param $minval int  随机元素最小值
  * @param $maxval int 随机元素最大值
