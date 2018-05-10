@@ -289,10 +289,11 @@ print_r($arr);
 /*************************************************************************/
 
 /**
- * 在数组开头插入一个单元 [模拟array_unshift 插入多个单元未实现]
+ * 在数组开头插入一个单元 [模拟array_unshift 插入多个单元未实现] 
  * @param $arr *array 要操作的数组
  * @param $val mixed  要插入的值
  * @return 数组长度
+ * 测试:一百万数据,跟原生array_unshift 无明显差距
 */
 function arr_unshift(&$arr,$val)
 {
@@ -312,6 +313,34 @@ function arr_unshift(&$arr,$val)
 $arr = [4,8,9,6];
 arr_unshift($arr,666);
 print_r($arr);// Array ( [0] => 666 [1] => 4 [2] => 8 [3] => 9 [4] => 6 )
+
+//////////////////////////////////////////////////////////////////////////
+/**
+ * 在数组开头插入一个或多个单元 [arr_unshift增加]
+ * @param $arr *array 要操作的数组
+ * @param $val mixed  不定参数 要插入的值 要插入多个值用逗号分开
+ * @return 数组长度
+ * 测试:一百万数据,跟原生array_unshift 相差在1秒内 待优化
+*/
+function arr_unshift_2(&$arr,$args)
+{
+	$args_len = func_num_args();
+	$args = func_get_args();
+	while($args_len>1)
+	{
+		arr_unshift($arr,$args[$args_len-1]);
+		$args_len--;
+	}
+
+	return count($arr);
+
+}
+
+$lis = ['php','python','java'];
+arr_unshift_2($lis,'go','js');
+
+// ['go','js','php','python','java' )
+print_r($lis);
 
 /*************************************************************************/
 
