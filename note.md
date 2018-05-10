@@ -31,6 +31,8 @@
 - go语言开发IDE lite IDE  下载地址: https://www.golangtc.com/go/liteide
 - go群里的开源go+node https://www.golang123.com/book
 - 整数序列 算法 http://oeis.org
+- 算法代码实例国内 https://leetcode-cn.com/ 
+- 算法代码实例国外:https://leetcode.com/
 - composer 改镜像服务器方法 https://pkg.phpcomposer.com/#how-to-use-packagist-mirror
 - composer 镜像地址: https://packagist.org/ 包官方网站
 - composer镜像地址: http://pkg.phpcomposer.com/ 中国镜像网
