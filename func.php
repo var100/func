@@ -288,6 +288,32 @@ print_r($arr);
 
 /*************************************************************************/
 
+/**
+ * 在数组开头插入一个单元 [模拟array_unshift 插入多个单元未实现]
+ * @param $arr *array 要操作的数组
+ * @param $val mixed  要插入的值
+ * @return 数组长度
+*/
+function arr_unshift(&$arr,$val)
+{
+	$len = count($arr);
+	$index = $len-1;
+	while($index>=0)
+	{
+
+		$arr[$index+1]= $arr[$index];
+		$index--;
+	}
+	$arr[0] = $val;
+	return $len+1;
+}
+
+
+$arr = [4,8,9,6];
+echo arr_unshift($arr,666);
+
+/*************************************************************************/
+
 
 
 
