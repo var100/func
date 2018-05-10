@@ -233,4 +233,14 @@ echo microtime(true);//1523200070.3713
 //说明: gettimeofday(true)等价于 microtime(true)
 
 /////////////////////////////////////////////////////////////////////////////////////
+// 函数内获取参数的方法 用于不定参数长度的自定义函数
+func_num_args(); // 获取函数参数长度 int
+func_get_arg(index); // 获取函数指定索引的参数 mixed
+func_get_args(); //获取函数的所有参数 array 
+
+
+
+
+
+
 
