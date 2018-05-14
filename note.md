@@ -41,3 +41,20 @@
 - composer 文档自动加载: http://docs.phpcomposer.com/01-basic-usage.html
 - php生成二维码 https://github.com/endroid/qr-code
 - 码云 https://gitee.com/
+
+- 新浪的IP地址查询接口：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js
+- 新浪多地域测试方法：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=219.242.98.111
+- 搜狐IP地址查询接口（默认GBK）：http://pv.sohu.com/cityjson
+- 搜狐IP地址查询接口（可设置编码）：http://pv.sohu.com/cityjson?ie=utf-8
+- 淘宝的IP接口地址: http://ip.taobao.com/
+- 还有一个 API比较全面返回格式JSONP  http://whois.pconline.com.cn 
+
+- 收费 百度的API：http://apistore.baidu.com/apiworks/servicedetail/114.html
+- 收费 国外IPAPI：http://www.ip-api.com/
+- 收费 91查API：http://www.91cha.com/api/ip.html
+- 收费 民间Ip：http://xn--ip-im8ckc.com/
+- 收费 中国IP地址信息查询系统： http://cnisp.org/
+
+- 自己也可以编写程序自己筛选ip地址 方法一：利用apnic获取准确的IP地址 http://blog.sina.com.cn/s/blog_495161310100js5t.html
+- 自己也可以编写程序自己筛选ip地址方法二：配置GeoIP和纯真IP库显示IP地理位置信息 http://blog.hackroad.com/operations-engineer/linux_server/3331.html
+- 其他IP段查询：http://ips.chacuo.net/view/s_SC
