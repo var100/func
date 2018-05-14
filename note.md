@@ -54,7 +54,6 @@
 - 收费 百度的API：http://apistore.baidu.com/apiworks/servicedetail/114.html
 - 收费 国外IPAPI：http://www.ip-api.com/
 - 收费 91查API：http://www.91cha.com/api/ip.html
-- 收费 民间Ip：http://xn--ip-im8ckc.com/
 - 收费 中国IP地址信息查询系统： http://cnisp.org/
 
 - 自己也可以编写程序自己筛选ip地址 方法一：利用apnic获取准确的IP地址 http://blog.sina.com.cn/s/blog_495161310100js5t.html
