@@ -353,6 +353,24 @@ function get_referer()
 }
 
 /*************************************************************************/
+/**
+ * 获取客户端IP地址
+ * @return  IP string
+*/
+function get_client_ip()
+{
+    
+    if (getenv("HTTP_CLIENT_IP")) $ip = getenv("HTTP_CLIENT_IP");
+    else if(getenv("HTTP_X_FORWARDED_FOR"))  $ip = getenv("HTTP_X_FORWARDED_FOR");
+    else if(getenv("REMOTE_ADDR"))  $ip = getenv("REMOTE_ADDR");
+    else $ip = '';
+    return $ip;
+   
+};
+
+/*************************************************************************/
+
+
 
 
 
