@@ -42,6 +42,7 @@
 - php生成二维码 https://github.com/endroid/qr-code
 - 码云 https://gitee.com/
 
+- ipcn IP地址查询 数据为mtml需要处理 https://ip.cn/ 访问: https://ip.cn/index.php?ip=111.196.215.160
 - 新浪的IP地址查询接口：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js
 - 新浪多地域测试方法：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=219.242.98.111
 - 搜狐IP地址查询接口（默认GBK）：http://pv.sohu.com/cityjson
