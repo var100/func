@@ -369,7 +369,16 @@ function get_client_ip()
 };
 
 /*************************************************************************/
+/**
+ * 获取客户端用户代理 UA
+ * @return  IP string
+*/
+function get_user_agent()
+{
+  return isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
+};
 
+/*************************************************************************/
 
 
 
