@@ -48,7 +48,8 @@
 - 搜狐IP地址查询接口（默认GBK）：http://pv.sohu.com/cityjson
 - 搜狐IP地址查询接口（可设置编码）：http://pv.sohu.com/cityjson?ie=utf-8
 - 淘宝的IP接口地址: http://ip.taobao.com/
-- 还有一个 API比较全面返回格式JSONP  http://whois.pconline.com.cn 
+- 淘宝IP http://ip.taobao.com/service/getIpInfo2.php?ip=114.242.250.44
+- 还有一个 API比较全面返回格式JSONP  http://whois.pconline.com.cn 
 
 - 收费 百度的API：http://apistore.baidu.com/apiworks/servicedetail/114.html
 - 收费 国外IPAPI：http://www.ip-api.com/
