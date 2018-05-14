@@ -59,3 +59,4 @@
 - 自己也可以编写程序自己筛选ip地址 方法一：利用apnic获取准确的IP地址 http://blog.sina.com.cn/s/blog_495161310100js5t.html
 - 自己也可以编写程序自己筛选ip地址方法二：配置GeoIP和纯真IP库显示IP地理位置信息 http://blog.hackroad.com/operations-engineer/linux_server/3331.html
 - 其他IP段查询：http://ips.chacuo.net/view/s_SC
+- UA useragent分析开源项目 https://github.com/WhichBrowser/Parser-PHP
