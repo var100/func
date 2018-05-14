@@ -343,6 +343,16 @@ arr_unshift_2($lis,'go','js');
 print_r($lis);
 
 /*************************************************************************/
+/**
+ * 获取客户端来源 referer 
+ *@return  referer string
+*/
+function get_referer()
+{
+    return isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+}
+
+/*************************************************************************/
 
 
 
