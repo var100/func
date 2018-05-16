@@ -26,9 +26,7 @@ class Person{
     {
        echo $this->name.'<br>';
     }
-    
-    
-    
+
 }
 $p = new Person('zs',28);
 $p = new Person('ls',28);
@@ -48,9 +46,6 @@ class Person{
     {
        echo $this->name.'<br>';
     }
-    
-    
-    
 }
 $p1 = new Person('zs',28);
 $p2 = new Person('ls',28);
@@ -69,9 +64,6 @@ class Person{
     {
        echo $this->name.'<br>';
     }
-    
-    
-    
 }
 $p1 = new Person('zs',28);
 $p2 = new Person('ls',28);
