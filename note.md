@@ -65,4 +65,4 @@
 
 - nginx 官网下载 http://nginx.org/download/
 - virtualBox虚拟软件下载 https://www.virtualbox.org/wiki/Downloads
-
+- phpstudy for linux 集成环境一键安装包 http://lamp.phpstudy.net/
