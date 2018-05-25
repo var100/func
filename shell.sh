@@ -1,4 +1,5 @@
 
+- centos6.5/7.3/7.4
 # author:dongzhihong
 # mail:244013508@qq.com
 # time: 2018-5-25 12:44:44
