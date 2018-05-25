@@ -64,3 +64,5 @@
 - go语言压力测试 goreplay  github https://github.com/buger/goreplay  下载:https://github.com/buger/goreplay/releases
 
 - nginx 官网下载 http://nginx.org/download/
+- virtualBox虚拟软件下载 https://www.virtualbox.org/wiki/Downloads
+
