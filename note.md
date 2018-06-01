@@ -67,3 +67,4 @@
 - virtualBox虚拟软件下载 https://www.virtualbox.org/wiki/Downloads
 - phpstudy for linux 集成环境一键安装包 http://lamp.phpstudy.net/
 - 美文网 https://www.wenjiwu.com/doc/xcxwni.html
+- php debug https://xdebug.org/ https://xdebug.org/download.php 
