@@ -68,4 +68,7 @@
 - phpstudy for linux 集成环境一键安装包 http://lamp.phpstudy.net/
 - 美文网 https://www.wenjiwu.com/doc/xcxwni.html
 - php debug https://xdebug.org/ https://xdebug.org/download.php 
-- xdebug 日志分析 https://sourceforge.net/projects/wincachegrind/
+- xdebug 日志分析 webgrind https://github.com/jokkedk/webgrind
+- php 其它性能分析工具 QCacheGrind  WebGrind  ApacheBench(ab)压力测试工具   XHProf性能分析工具   LoadRunner专业级性能测试  Jmeter  ocp
+  
+
