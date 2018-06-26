@@ -71,4 +71,4 @@
 - xdebug 日志分析 webgrind https://github.com/jokkedk/webgrind
 - php 其它性能分析工具 QCacheGrind  WebGrind  ApacheBench(ab)压力测试工具   XHProf性能分析工具   LoadRunner专业级性能测试  Jmeter  ocp
   
-
+- linux在线命令较全 http://man.linuxde.net/curl
